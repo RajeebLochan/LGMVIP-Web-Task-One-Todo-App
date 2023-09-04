@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    background: linear-gradient(185deg,#3b3ee3,#045610);
+    padding: 10px;
+}
+.todo-app{
+    max-width: 545px;
+    background-color: transparent;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+
+}
+h1{
+    color: limegreen;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+h1 img{
+    width: 32px;
+    margin-left: 10px;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: wheat;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(0, 172, 0);
+    border-radius: 10px;
+    font-size:large;
+}
+button:hover{
+    background-color: #045610;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius:50%;
+    background-image: url(Image/Un-check.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 16px;
+    color: #ffffff;
+}
+ul li.checked{
+    color: #ffffff;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    color: #ffffff;
+    background-image: url(Image/Green-Check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #7e7e7e;
+}
