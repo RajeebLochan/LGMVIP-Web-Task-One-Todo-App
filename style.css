@@ -21,6 +21,7 @@ h1{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    
 }
 h1 img{
     width: 32px;
@@ -101,4 +102,9 @@ ul li span{
 }
 ul li span:hover{
     background: #7e7e7e;
+}
+@media screen and (min-width: 546px){
+    h1{
+        margin-left: 135px;
+    }
 }
